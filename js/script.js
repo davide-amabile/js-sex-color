@@ -9,7 +9,7 @@ var gender = prompt("Sei maschio o femmina?");
 if (gender === "maschio" || gender === "femmina"){
   document.getElementById("name").innerHTML = ( " "+ nome );
 }
- else if ( gender != "maschio" || gender!="femmina"){
+ else if ( gender != "maschio" || gender != "femmina"){
   document.getElementById('name').innerHTML = ("immettere il sesso");
 }
 
