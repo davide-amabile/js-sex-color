@@ -9,14 +9,14 @@ var gender = prompt("Sei maschio o femmina?");
 if (gender === "maschio" || gender === "femmina"){
   document.getElementById("name").innerHTML = ( " "+ nome );
 }
- else{
-  alert("immettere il sesso");
+ else if ( gender != "maschio" || gender!="femmina"){
+  document.getElementById('name').innerHTML = ("immettere il sesso");
 }
 
 
-if (isNaN( nome )){
+if (isNaN(nome)){
   document.getElementById('name').innerHTML = (" " + nome );
 }
-else (!isNaN( nome )){
-  alert("immettere il nome");
+else if (!isNaN(nome)){
+  document.getElementById('name').innerHTML = ("immettere il nome");
 }
