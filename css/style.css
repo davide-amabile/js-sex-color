@@ -7,3 +7,7 @@
   color:pink;
   text-transform: capitalize;
 }
+
+.display {
+  display: none;
+}
