@@ -14,9 +14,9 @@ if (gender === "maschio" || gender === "femmina"){
 }
 
 
-if (nome.isNaN()){
+if (isNaN( nome )){
   document.getElementById('name').innerHTML = (" " + nome );
 }
-else (!isNaN( nome)){
+else (!isNaN( nome )){
   alert("immettere il nome");
 }
