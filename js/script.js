@@ -6,17 +6,45 @@ var gender = prompt("Sei maschio o femmina?");
 // azzurro se maschio rosa se è femmina
 
 
-if (gender === "maschio" || gender === "femmina"){
-  document.getElementById("name").innerHTML = ( " "+ nome );
+if (gender === "maschio") {
+  document.getElementById('name').classList.add("blue");
 }
- else if ( gender != "maschio" || gender != "femmina"){
-  document.getElementById('name').innerHTML = ("immettere il sesso");
+else if (gender === "femmina"){
+  document.getElementById('name').classList.add("pink");  
 }
 
+document.getElementById('name').innerHTML = (" " + nome);
 
-if (isNaN(nome)){
-  document.getElementById('name').innerHTML = (" " + nome );
-}
-else if (!isNaN(nome)){
-  document.getElementById('name').innerHTML = ("immettere il nome");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// if (gender === "maschio" || gender === "femmina"){
+//   document.getElementById("name").innerHTML = ( " "+ nome );
+// }
+//  else if ( gender != "maschio" || gender != "femmina"){
+//  document.getElementById('name').innerHTML = ("immettere il sesso");
+//
+// }
+//
+//
+// if (isNaN(nome)){
+//   document.getElementById('name').innerHTML = (" " + nome );
+// }
+// else if (!isNaN(nome)){
+//   document.getElementById('name').innerHTML = (" " + "immettere il nome");
+// }
