@@ -6,12 +6,17 @@ var gender = prompt("Sei maschio o femmina?");
 // azzurro se maschio rosa se è femmina
 
 
-// var answer = nome + gender;
-
-if (gender === "maschio" || gender === "femmina") {
+if (gender === "maschio" || gender === "femmina"){
   document.getElementById("name").innerHTML = ( " "+ nome );
-
 }
-else if{
+ else{
   alert("immettere il sesso");
+}
+
+
+if (nome.isNaN()){
+  document.getElementById('name').innerHTML = (" " + nome );
+}
+else (!isNaN( nome)){
+  alert("immettere il nome");
 }
